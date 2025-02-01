@@ -447,3 +447,85 @@ header .menu.active {
 .bg-media-btn.active {
   display: block;
 }
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1300px) {
+  .banner .screen {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 20px 50px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  header::after {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--clr-primary);
+  }
+
+  .logo {
+    margin-top: 30px;
+  }
+
+  .nav-list {
+    right: 0;
+    width: 100%;
+  }
+
+  .nav-list.active {
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+
+  .banner {
+    padding: 30px 30px 100px;
+  }
+
+  .banner .content {
+    position: relative;
+    padding-bottom: 100px;
+  }
+
+  .banner .content h1 {
+    font-size: 4em;
+  }
+
+  .banner .content .model-title {
+    font-size: 2em;
+  }
+
+  .banner .content button {
+    padding: 10px 40px;
+  }
+
+  .banner .carousel {
+    width: 100%;
+    left: 0;
+  }
+
+  .sci {
+    right: 20px;
+  }
+
+  .bg-media-btn-wrapper {
+    top: 55%;
+  }
+
+  .nav-list li a {
+    font-size: 2rem;
+  }
+}
