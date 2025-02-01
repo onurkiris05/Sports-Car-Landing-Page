@@ -29,13 +29,7 @@
           <li><a href="#">Legacy</a></li>
         </ul>
         <div class="bg-video-wrapper">
-          <video
-            class="bg-video mclaren-1 active"
-            src="/assets/videos/mclaren-1.mp4"
-            autoplay
-            loop
-            muted
-          ></video>
+          <video class="bg-video" src="/assets/videos/mclaren-1.mp4" autoplay loop muted></video>
         </div>
         <div class="content">
           <h1>McLAREN</h1>
@@ -45,6 +39,14 @@
             excepturi eaque aliquid fuga eligendi vitae, sapiente fugiat accusamus modi similique.
           </p>
           <button>Enquire</button>
+        </div>
+        <div class="bg-media-btn-wrapper">
+          <button class="bg-media-btn pause active">
+            <i class="fa fa-pause-circle" aria-hidden="true"></i>
+          </button>
+          <button class="bg-media-btn">
+            <i class="fa fa-play-circle" aria-hidden="true"></i>
+          </button>
         </div>
         <div class="screen">
           <div class="shadow"></div>
@@ -88,23 +90,23 @@
           </div>
         </div>
         <div class="carousel">
-          <a href="" class="carousel-item"
+          <a href="" class="carousel-item" onclick="setCurrentCar('765LT SPIDER')"
             ><img src="/assets/images/mclaren-1.jpg" alt="" />
             <h4 style="color: #00c2de">765LT SPIDER</h4></a
           >
-          <a href="" class="carousel-item"
+          <a href="" class="carousel-item" onclick="setCurrentCar('ARTURA')"
             ><img src="/assets/images/mclaren-2.jpg" alt="" />
             <h4 style="color: #92ff00">ARTURA</h4></a
           >
-          <a href="" class="carousel-item"
+          <a href="" class="carousel-item" onclick="setCurrentCar('750S')"
             ><img src="/assets/images/mclaren-3.jpeg" alt="" />
             <h4 style="color: #ff0015">750S</h4></a
           >
-          <a href="" class="carousel-item"
+          <a href="" class="carousel-item" onclick="setCurrentCar('765LT')"
             ><img src="/assets/images/mclaren-4.jpeg" alt="" />
             <h4 style="color: #ff2e00">765LT</h4>
           </a>
-          <a href="" class="carousel-item"
+          <a href="" class="carousel-item" onclick="setCurrentCar('750S SPIDER')"
             ><img src="/assets/images/mclaren-5.jpeg" alt="" />
             <h4 style="color: #bbc0dd">750S SPIDER</h4></a
           >

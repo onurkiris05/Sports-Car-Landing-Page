@@ -61,7 +61,7 @@ header .menu {
   background-size: 30px;
   filter: invert(1);
   border: none;
-  transition: 0.5s ease;
+  transition: 0.2s ease;
 }
 
 header .menu.active {
@@ -257,7 +257,6 @@ header .menu.active {
 /* BACKGROUND VIDEO */
 
 .banner .bg-video {
-  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -265,10 +264,6 @@ header .menu.active {
   height: 100%;
   object-fit: cover;
   object-position: center;
-}
-
-.banner .bg-video.active {
-  display: block;
 }
 
 /* SCREEN */
@@ -417,4 +412,38 @@ header .menu.active {
 
 .sci li a:hover {
   color: var(--clr-primary);
+}
+
+/* BG-VIDEO MEDIA BUTTON */
+
+.bg-media-btn-wrapper {
+  position: absolute;
+  top: 40%;
+  right: 25%;
+  z-index: 100;
+}
+
+.bg-media-btn {
+  display: none;
+  position: absolute;
+  font-size: 4em;
+  border: none;
+  background: transparent;
+  color: rgba(0, 194, 222, 0.6);
+  filter: blur(2px);
+  transition: 0.2s ease;
+}
+
+.bg-media-btn:hover {
+  color: rgba(0, 194, 222, 1);
+  filter: blur(0px);
+  transform: scale(1.2);
+}
+
+.bg-media-btn:focus {
+  background-color: transparent;
+}
+
+.bg-media-btn.active {
+  display: block;
 }
