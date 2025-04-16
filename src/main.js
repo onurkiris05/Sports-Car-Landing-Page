@@ -49,8 +49,7 @@ const carData = [
     color: "#bbc0dd",
   },
 ];
-
-function setCurrentCar(carModel) {
+window.setCurrentCar = function (carModel) {
   const currentCar = carData.find((car) => car.model === carModel);
   modelTitle.textContent = currentCar.model;
   modelTitle.style.color = currentCar.color;
@@ -58,7 +57,7 @@ function setCurrentCar(carModel) {
   trailer.src = currentCar.video;
 
   resetBgVideo();
-}
+};
 
 function toggleBgVideo() {
   bgVideoButtons.forEach((button) => {
