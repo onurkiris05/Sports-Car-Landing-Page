@@ -7,8 +7,12 @@ const bgVideoButtons = document.querySelectorAll(".bg-media-btn");
 const screenVideos = document.querySelectorAll(".screen-video");
 
 document.addEventListener("DOMContentLoaded", function () {
-  var elems = document.querySelectorAll(".carousel");
-  var instances = M.Carousel.init(elems);
+  if (typeof M !== "undefined") {
+    var elems = document.querySelectorAll(".carousel");
+    var instances = M.Carousel.init(elems);
+  } else {
+    console.error("Materialize not loaded!");
+  }
 });
 
 function toggleMenu() {
