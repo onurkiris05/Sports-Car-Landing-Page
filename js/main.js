@@ -19,11 +19,31 @@ function toggleMenu() {
 menuBtn.addEventListener("click", toggleMenu);
 
 const carData = [
-  { model: "765LT SPIDER", video: "/assets/videos/mclaren-1.mp4", color: "#00c2de" },
-  { model: "ARTURA", video: "/assets/videos/mclaren-2.mp4", color: "#92ff00" },
-  { model: "750S", video: "/assets/videos/mclaren-3.mp4", color: "#ff0015" },
-  { model: "765LT", video: "/assets/videos/mclaren-4.mp4", color: "#ff2e00" },
-  { model: "750S SPIDER", video: "/assets/videos/mclaren-5.mp4", color: "#bbc0dd" },
+  {
+    model: "765LT SPIDER",
+    video: "https://res.cloudinary.com/djzahz5ym/video/upload/v1744786131/avboolgutpkrext89ohs.mp4",
+    color: "#00c2de",
+  },
+  {
+    model: "ARTURA",
+    video: "https://res.cloudinary.com/djzahz5ym/video/upload/v1744786134/tg2u5qecrk36fkhrnuk2.mp4",
+    color: "#92ff00",
+  },
+  {
+    model: "750S",
+    video: "https://res.cloudinary.com/djzahz5ym/video/upload/v1744786155/hgam188elxuqawhkopd9.mp4",
+    color: "#ff0015",
+  },
+  {
+    model: "765LT",
+    video: "https://res.cloudinary.com/djzahz5ym/video/upload/v1744786117/z7wmcnrwej9iv3jxs4oh.mp4",
+    color: "#ff2e00",
+  },
+  {
+    model: "750S SPIDER",
+    video: "https://res.cloudinary.com/djzahz5ym/video/upload/v1744786158/slpvrpediw5lsiimonuh.mp4",
+    color: "#bbc0dd",
+  },
 ];
 
 function setCurrentCar(carModel) {
